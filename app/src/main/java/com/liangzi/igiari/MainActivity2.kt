@@ -19,7 +19,7 @@ class MainActivity2 : AppCompatActivity(), SensorEventListener {
     private lateinit var accelerometer: Sensor
     private var 前加速度: Double = 0.0
     private var 敏感度: Int = 0
-    private var 选中视频: Int = R.raw.bigiari
+    private var 选中视频: Int = R.raw.igiari
     private var 视频链接 = Uri.parse("android.resource://" + getPackageName() + "/" + 选中视频)
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,17 +50,17 @@ class MainActivity2 : AppCompatActivity(), SensorEventListener {
         binding.apply {
 
             igiari.setOnClickListener {
-                选中视频 = R.raw.bigiari
+                选中视频 = R.raw.igiari
                 视频链接 = Uri.parse("android.resource://" + getPackageName() + "/" + 选中视频)
                 video.setVideoURI(视频链接)
             }
             matta.setOnClickListener {
-                选中视频 = R.raw.bmatta
+                选中视频 = R.raw.matta
                 视频链接 = Uri.parse("android.resource://" + getPackageName() + "/" + 选中视频)
                 video.setVideoURI(视频链接)
             }
             chotto.setOnClickListener {
-                选中视频 = R.raw.bchotto
+                选中视频 = R.raw.chotto
                 视频链接 = Uri.parse("android.resource://" + getPackageName() + "/" + 选中视频)
                 video.setVideoURI(视频链接)
             }
